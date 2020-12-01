@@ -24,6 +24,6 @@ node {
     }
 
     stage('Push image') {
-        docker version
+        sh 'docker version'
     }
 }
