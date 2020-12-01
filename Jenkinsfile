@@ -5,7 +5,7 @@ pipeline{
             /* This builds the actual image; synonymous to
             * docker build on the command line */
             steps{
-                dir("frontend") {
+                dir("${env.WORKSPACE}/frontend") {
                     sh "pwd"
                     sh "ls -la"
                     sh "docker build -t localhost:8083/wurstgurke/jenkinsnode:latest ."
