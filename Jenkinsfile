@@ -1,5 +1,5 @@
 pipeline{
-    agent any
+    agent none
     stages{
         stage('Build image') {
             /* This builds the actual image; synonymous to
