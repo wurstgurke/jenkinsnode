@@ -5,6 +5,7 @@ pipeline{
             /* This builds the actual image; synonymous to
             * docker build on the command line */
             steps{
+                checkout scm
                 dir("${env.WORKSPACE}/frontend") {
                     sh "pwd"
                     sh "ls -la"
